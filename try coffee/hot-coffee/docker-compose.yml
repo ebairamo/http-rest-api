@@ -1,0 +1,41 @@
+# version: "3.8"
+
+# services:
+#   app:
+#     build: .
+#     container_name: hot-coffee
+#     ports:
+#       - "8080:8080"   # <== Добавил 8080
+#       - "4000:4000"
+#       - "40000:40000"
+#     environment:
+#       - CGO_ENABLED=1
+#       - GOFLAGS=-tags=debug
+#     command: 
+#       - "dlv"
+#       - "exec"
+#       - "/app/hot-coffee"
+#       - "--headless"
+#       - "--listen=:40000"
+#       - "--api-version=2"
+     
+
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: hot-coffee
+    ports:
+      - "8080:8080"  # Порт для HTTP-запросов
+      - "40000:40000"  # Порт для Delve (отладка)
+    environment:
+      - CGO_ENABLED=1
+      - GOFLAGS=-tags=debug
+    command:
+      - "dlv"
+      - "exec"
+      - "/app/hot-coffee"
+      - "--headless"
+      - "--listen=:40000"
+      - "--api-version=2"

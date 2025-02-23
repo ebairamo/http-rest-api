@@ -1,0 +1,32 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//       {
+//         "name": "Debug with Docker",
+//         "type": "go",
+//         "request": "attach",
+//         "mode": "remote",
+//         "remotePath": "/app",
+//         "port": 40000,
+//         "host": "localhost",
+//         "program": "${workspaceFolder}",
+//         "dlvToolPath": "/go/bin/dlv"
+//       }
+//     ]
+//   }
+  
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug with Docker",
+      "type": "go",
+      "request": "attach",
+      "mode": "remote",
+      "remotePath": "/app",
+      "port": 40000,
+      "host": "localhost"
+    }
+  ]
+}
