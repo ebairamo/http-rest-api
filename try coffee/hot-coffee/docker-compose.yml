@@ -27,7 +27,7 @@ services:
     build: .
     container_name: hot-coffee
     ports:
-      - "8080:8080"  # Порт для HTTP-запросов
+      - "8081:8080"  # Порт для HTTP-запросов
       - "40000:40000"  # Порт для Delve (отладка)
     environment:
       - CGO_ENABLED=1
