@@ -1,0 +1,102 @@
+Kaspi Gold:440043
+Forte Blue:517792
+Halyk Bonus:440563
+Jusan Pay:539545
+Kaspi Red:462738
+Halyk Light:416952
+Forte Silver:530069
+Forte Platinum:535089
+Jusan Classic:540912
+Kaspi Platinum:510847
+Forte Gold:546954
+Halyk Standard:522154
+Jusan Infinite:545839
+Halyk Premier:520230
+Jusan Premium:553781
+Kaspi Classic:516828
+Forte Infinite:554587
+Jusan Signature:559072
+Alpha Bank Platinum:487738
+Tinkoff Black:423456
+Sberbank Gold:455671
+Raiffeisen Classic:448822
+VTB Premium:490456
+Gazprombank Silver:461234
+UniCredit Red:477676
+Bank of America Cash Rewards:426771
+Citibank Premier:411915
+Wells Fargo Propel:440223
+HSBC World Elite:512345
+Capital One Venture:491610
+Barclays Arrival:453234
+Chase Sapphire Preferred:428543
+Discover it Cash Back:601238
+American Express Gold:373575
+Standard Chartered Ultimate:520865
+Deutsche Bank Platinum:451299
+Credit Suisse Private Banking:455376
+UBS Visa Signature:479856
+Chase Freedom:416123
+Citi Double Cash:412345
+Capital One Quicksilver:403456
+Barclays Arrival:511234
+Citi Premier:512345
+HSBC Gold:514789
+Capital One Venture:523456
+Bank of America Travel Rewards:521234
+Standard Chartered Platinum:528765
+Forte Black:534567
+JPMorgan Chase Sapphire:532345
+American Express Blue:533456
+Citi Cash Back:542345
+HSBC Premier:545678
+Barclays Rewards:547890
+Chase Slate:553456
+Capital One Mastercard:554321
+American Express Gold:341234
+American Express Green:347890
+American Express Blue Cash:349876
+American Express Platinum:371234
+American Express Business Gold:372345
+American Express Centurion:379876
+Discover it Miles:644456
+Discover it Secured:644789
+Discover it Student:645123
+Discover it Cash Back:645456
+JCB Classic:352812
+JCB Platinum:352834
+JCB Gold:352856
+JCB Premier:352912
+JCB Silver:352934
+JCB Rewards:352956
+CB Diamond:353012
+JCB Elite:353034
+JCB Business:353056
+JCB Signature:353112
+JCB Standard:353134
+JCB Corporate:353156
+JCB Ultimate:353312
+JCB Premium:353412
+JCB Classic:353534
+JCB Platinum:353556
+JCB Rewards:353634
+JCB Elite:353656
+JCB Gold:353712
+JCB Premier:353734
+Diners Club Classic:300123
+Diners Club Rewards:300456
+Diners Club Gold:300789
+Diners Club Platinum:301123
+Diners Club Elite:301456
+Diners Club Business:301789
+Diners Club Premium:302456
+Diners Club Travel:302789
+Diners Club Ultimate:303456
+Diners Club Signature:304789
+Diners Club Elite:383456
+InstaPayment Classic:637123
+InstaPayment Gold:637234
+InstaPayment Platinum:637345
+InstaPayment Premium:638123
+InstaPayment Rewards:638234
+InstaPayment Elite:638345

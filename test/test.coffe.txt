@@ -1,0 +1,130 @@
+post 
+{
+  "ingredient_id": "muffin",
+  "name": "Blueberry Muffin",
+  "quantity": 10,
+  "unit": "pieces"
+}
+ код 201 Created 
+боди пуст
+
+[
+   {
+      "product_id": "muffin",
+      "name": "Blueberry Muffin",
+      "description": "Freshly baked muffin with blueberries",
+      "price": 2,
+      "ingredients": [
+         {
+            "ingredient_id": "flour",
+            "quantity": 100
+         },
+         {
+            "ingredient_id": "blueberries",
+            "quantity": 20
+         },
+         {
+            "ingredient_id": "sugar",
+            "quantity": 30
+         }
+      ]
+   },
+__________________________________________________________________________
+{
+  "ingredient_id": "уукуув",
+  "name": "аываываыва",
+  "quantity": -10,
+  "unit": "вапвапв"
+}
+
+   {
+      "ingredient_id": "уукуув",
+      "name": "аываываыва",
+      "quantity": -10,
+      "unit": "вапвапв"
+   }
+]
+
+добавил -10
+_____________________________________________________________________________
+
+localhost:4000/menu
+
+{
+  "product_id": "caramel_latte",
+  "name": "Caramel Latte",
+  "description": "Espresso with steamed milk and caramel syrup",
+  "price": 4.50,
+  "ingredients": [
+    {
+      "ingredient_id": "espresso_shot",
+      "quantity": 1
+    },
+    {
+      "ingredient_id": "milk",
+      "quantity": 200
+    },
+    {
+      "ingredient_id": "caramel_syrup",
+      "quantity": -30
+    }
+  ]
+}
+
+
+   {
+      "product_id": "caramel_latte",
+      "name": "Caramel Latte",
+      "description": "Espresso with steamed milk and caramel syrup",
+      "price": 4.5,
+      "ingredients": [
+         {
+            "ingredient_id": "espresso_shot",
+            "quantity": 1
+         },
+         {
+            "ingredient_id": "milk",
+            "quantity": 200
+         },
+         {
+            "ingredient_id": "caramel_syrup",
+            "quantity": -30
+         }
+      ]
+   }
+]
+
+______________________________________________________________________________
+
+ PUT localhost:4000/menu/caramel_latte 
+
+{
+  "product_id": "caramel_latte",
+  "name": "Caramel Latte Deluxe",
+  "description": "Espresso with steamed milk, caramel syrup, and whipped cream",
+  "price": -5.00,
+  "ingredients": [
+    {
+      "ingredient_id": "espresso_shot",
+      "quantity": 1
+    },
+    {
+      "ingredient_id": "milk",
+      "quantity": 200
+    },
+    {
+      "ingredient_id": "caramel_syrup",
+      "quantity": -30
+    },
+    {
+      "ingredient_id": "whipped_cream",
+      "quantity": 50
+    }
+  ]
+}
+
+{
+    "error": "negative price in menu item provided"
+}
+____________________________________________________________________________
+

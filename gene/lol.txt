@@ -1,0 +1,63 @@
+package main
+
+import "fmt"
+
+func main() {
+	card := []int{4, 4, 0, 0, 4, 3, 0, 1, 8, 0, 3, 0}
+	var even, odd []int
+	var resulteven int
+	var resultodd int
+	var resultfinal int
+	var cardnew []int
+	for a := 0; a < 10; a++ {
+
+		for b := 0; b < 10; b++ {
+
+			for c := 0; c < 10; c++ {
+
+				for d := 0; d < 10; d++ {
+
+					// Формирование строки с четырьмя цифрами
+
+					cardnew = card
+					cardnew = append(cardnew, a, b, c, d)
+
+					for i := 0; i < (len(card)); i++ {
+						if i%2 == 0 {
+							odd = append(odd, card[i])
+						} else {
+							even = append(even, card[i])
+						}
+					}
+
+					for i := 0; i < len(odd); i++ {
+						multiply := odd[i] * 2
+						if multiply > 9 {
+							multiply -= 9
+						}
+
+						resultodd += multiply
+
+					}
+					for i := 0; i < len(even); i++ {
+						resulteven += even[i]
+					}
+					resultfinal = resultodd + resulteven
+					if resultfinal%10 == 0 {
+						fmt.Println("Ok")
+						fmt.Println(resultfinal)
+						resultfinal = 0
+
+					} else {
+						fmt.Println("Incorrect")
+						fmt.Println("final", resultfinal)
+						resultfinal = 0
+
+					}
+
+				}
+			}
+			cardnew = []int{}
+		}
+	}
+}

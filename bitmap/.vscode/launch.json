@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Apply Vertical Mirror",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${fileDirname}",
+            "args": [
+                "apply",
+                "--crop=20-20-100-100",
+                "--crop=25-25-50-50",
+                "sample.bmp",
+                "sample-cropped-45-45-50-50.bmp"
+            ]
+        }
+    ]
+}

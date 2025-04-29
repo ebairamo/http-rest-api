@@ -1,0 +1,3 @@
+ ./creditcard generate validate 
+ ./creditcard generate "0000000000****"
+  ./creditcard information --brands=brands.txt --issuers=issuers.txt "4400430180300003" "36778302039911"
