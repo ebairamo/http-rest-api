@@ -12,7 +12,6 @@ import (
 	"1337b04rd/internal/adapters/primary/http/middleware"
 	"1337b04rd/internal/domain/models"
 	"1337b04rd/internal/domain/services"
-	"1337b04rd/internal/ports/external"
 )
 
 // PostHandler обрабатывает HTTP запросы для постов
@@ -20,7 +19,6 @@ type PostHandler struct {
 	postService    *services.PostService
 	userService    *services.UserService
 	commentService *services.CommentService
-	imageStorage   external.ImageStorage
 }
 
 // NewPostHandler создает новый обработчик постов

@@ -12,11 +12,9 @@ import (
 )
 
 // CommentHandler обрабатывает HTTP запросы для комментариев
-// CommentHandler обрабатывает HTTP запросы для комментариев
 type CommentHandler struct {
 	commentService *services.CommentService
 	userService    *services.UserService
-	imageStorage   s3.ImageStorage
 }
 
 // NewCommentHandler создает новый обработчик комментариев

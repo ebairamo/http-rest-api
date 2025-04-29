@@ -137,7 +137,7 @@ func (r *UserRepository) CreateWithSession(ctx context.Context, user *models.Use
 }
 
 // GetRandomAvatar получает случайный аватар для пользователя
-func (r *UserRepository) GetRandomAвvatar(ctx context.Context) (string, error) {
+func (r *UserRepository) GetRandomAvatar(ctx context.Context) (string, error) {
 	// Используем сервис аватаров Rick and Morty
 	avatarURL, _, err := r.avatarService.GetRandomAvatar(ctx)
 	if err != nil {

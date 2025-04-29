@@ -31,9 +31,8 @@ func RegisterRoutes(mux *http.ServeMux, db *sql.DB) {
 
 	// Создание обработчиков
 	userHandler := handlers.NewUserHandler(userService)
-	postHandler := handlers.NewPostHandler(postService, userService, commentService, imageStorage)
-	commentHandler := handlers.NewCommentHandler(commentService, userService, imageStorage)
-	imageHandler := handlers.NewImageHandler(imageStorage)
+	postHandler := handlers.NewPostHandler(postService, userService, commentService)
+	commentHandler := handlers.NewCommentHandler(commentService, userService)
 	pageHandler := handlers.HandlePage
 
 	// Функция-помощник для оборачивания обработчиков с аутентификацией
@@ -171,10 +170,3 @@ func handleCommentRoutes(w http.ResponseWriter, r *http.Request, handler *handle
 		http.Error(w, "Метод не разрешен", http.StatusMethodNotAllowed)
 	}
 }
-
-
-// Маршрут для обслуживания изображений
-mux.Handle("/images/", withAuth(http.HandlerFunc(imageHandler.HandleGetImage)))
-
-// Статические страницы без аутентификации
-mux.Handle("/", withAuth(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

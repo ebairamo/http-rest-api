@@ -5,9 +5,7 @@ import (
 	"fmt"
 	"log"
 	"log/slog"
-	"net/http"
 	"os"
-	"time"
 
 	httpAdapter "1337b04rd/internal/adapters/primary/http"
 	"1337b04rd/internal/adapters/secondary/postgres"
@@ -41,22 +39,6 @@ func Run() {
 		Level: slog.LevelDebug,
 	}))
 	slog.SetDefault(logger)
-
-	// Проверка доступности сервиса хранилища
-	storageURL := os.Getenv("STORAGE_URL")
-	if storageURL == "" {
-		storageURL = "http://localhost:8082" // Значение по умолчанию
-	}
-
-	// Проверяем соединение с сервисом хранилища
-	client := http.Client{Timeout: 5 * time.Second}
-	_, err := client.Get(storageURL)
-	if err != nil {
-		slog.Warn("Сервис хранилища изображений недоступен", "url", storageURL, "error", err)
-		slog.Info("Продолжаем без хранилища изображений, загрузка файлов может не работать")
-	} else {
-		slog.Info("Сервис хранилища изображений доступен", "url", storageURL)
-	}
 
 	// Подключение к базе данных
 	db := postgres.Connect()

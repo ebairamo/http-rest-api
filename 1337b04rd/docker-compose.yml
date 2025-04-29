@@ -17,18 +17,6 @@ services:
       timeout: 5s
       retries: 5
 
-  storage:
-    build:
-      context: ./
-      dockerfile: Dockerfile.storage
-    ports:
-      - "8082:8082"
-    volumes:
-      - storage_data:/data
-    environment:
-      - PORT=8082
-      - DIR=/data
-
   web:
     build: .
     ports:
@@ -37,15 +25,9 @@ services:
     depends_on:
       db:
         condition: service_healthy
-      storage:
-        condition: service_started
     environment:
       DB_HOST: db
       DB_PORT: 5432
       DB_USER: elite_user
       DB_PASSWORD: elite_pass
       DB_NAME: eliteboard_db
-      STORAGE_URL: http://storage:8082
-
-volumes:
-  storage_data:
